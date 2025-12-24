@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>144 Sales | Excess Inventory Solutions</title>
+  <meta name="description" content="Brand-safe excess inventory solutions: discreet resale, export, recovery options, fast pickup, and relationship-driven placement. Outright buy, brokerage, or consignment." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="144 Sales | Excess Inventory Solutions" />
+  <meta property="og:description" content="Solve excess inventory problems with brand-safe, discreet solutions. Outright buy, brokerage, or consignment." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://144sales.com" />
+
+  <!-- Basic favicon placeholder -->
+  <link rel="icon" href="assets/favicon.png" />
+
+  <style>
+    :root{
+      --bg:#070b14;
+      --panel:#0b1220;
+      --panel2:#0f1a2e;
+      --text:#e9eefc;
+      --muted:#b8c3e6;
+      --line:rgba(255,255,255,.10);
+      --brand:#6ea8ff;
+      --brand2:#7cf0c8;
+      --danger:#ff6b6b;
+      --ok:#34d399;
+      --shadow: 0 18px 55px rgba(0,0,0,.45);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1120px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:
+        radial-gradient(1200px 600px at 15% -10%, rgba(110,168,255,.26), transparent 60%),
+        radial-gradient(900px 500px at 90% 5%, rgba(124,240,200,.16), transparent 55%),
+        radial-gradient(700px 380px at 70% 105%, rgba(110,168,255,.14), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(7,11,20,.70);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; min-width:220px;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(110,168,255,.85), rgba(124,240,200,.70));
+      box-shadow: 0 12px 30px rgba(110,168,255,.18);
+      display:grid; place-items:center; font-weight:800; letter-spacing:.5px;
+      color:#061028;
+    }
+    .brand h1{font-size:14px; margin:0}
+    .brand p{font-size:12px; margin:0; color:var(--muted)}
+    .navlinks{
+      display:flex; gap:16px; align-items:center;
+    }
+    .navlinks a{
+      font-size:13px; color:var(--muted);
+      padding:8px 10px; border-radius:12px;
+    }
+    .navlinks a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .ctaRow{display:flex; gap:10px; align-items:center}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; padding:10px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color:var(--text);
+      font-weight:650; font-size:13px;
+      box-shadow: none;
+      cursor:pointer;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      user-select:none;
+    }
+    .btn:hover{background: rgba(255,255,255,.08); transform: translateY(-1px)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(110,168,255,.95), rgba(124,240,200,.80));
+      color:#061028;
+      border-color: rgba(255,255,255,.14);
+      box-shadow: 0 18px 45px rgba(110,168,255,.18);
+    }
+    .btn.primary:hover{transform: translateY(-2px)}
+    .btn.ghost{background:transparent}
+    .hamburger{display:none}
+    .pill{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:7px 12px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      color:var(--muted);
+      font-size:12px;
+    }
+    .pill .dot{
+      width:8px; height:8px; border-radius:99px;
+      background: var(--brand2);
+      box-shadow: 0 0 0 4px rgba(124,240,200,.12);
+    }
+
+    /* Hero */
+    .hero{padding:54px 0 18px}
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+    }
+    .heroCard{padding:26px}
+    .hero h2{
+      margin:12px 0 10px;
+      font-size:44px; line-height:1.06;
+      letter-spacing:-.7px;
+    }
+    .hero h2 span{
+      background: linear-gradient(135deg, rgba(110,168,255,1), rgba(124,240,200,1));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+    .hero p.lede{
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size:15px;
+      max-width: 58ch;
+    }
+    .heroActions{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin: 14px 0 18px;
+    }
+    .miniGrid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+      margin-top:14px;
+    }
+    .mini{
+      padding:12px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+    }
+    .mini b{display:block; font-size:13px; margin-bottom:4px}
+    .mini span{font-size:12px; color:var(--muted)}
+    .sideCard{padding:18px}
+    .sideCard h3{margin:4px 0 12px; font-size:16px}
+    .trustList{display:grid; gap:10px}
+    .trustItem{
+      display:flex; gap:12px;
+      padding:12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+    }
+    .icon{
+      width:34px; height:34px; border-radius:12px;
+      background: rgba(110,168,255,.16);
+      border:1px solid rgba(110,168,255,.26);
+      display:grid; place-items:center;
+      flex:0 0 auto;
+    }
+    .trustItem b{display:block; font-size:13px}
+    .trustItem p{margin:2px 0 0; color:var(--muted); font-size:12px}
+
+    /* Sections */
+    section{padding:26px 0}
+    .sectionTitle{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:12px;
+      margin-bottom:12px;
+    }
+    .sectionTitle h3{margin:0; font-size:18px}
+    .sectionTitle p{margin:0; color:var(--muted); font-size:13px; max-width:65ch}
+    .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px}
+    .grid2{display:grid; grid-template-columns: repeat(2, 1fr); gap:12px}
+    .box{
+      padding:16px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+    }
+    .box h4{margin:0 0 8px; font-size:14px}
+    .box p{margin:0; color:var(--muted); font-size:13px}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .tag{
+      font-size:12px; color:var(--muted);
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      padding:6px 10px; border-radius:999px;
+    }
+
+    /* Process */
+    .steps{display:grid; gap:10px}
+    .step{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:14px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+    }
+    .num{
+      width:30px; height:30px; border-radius:12px;
+      background: rgba(124,240,200,.14);
+      border:1px solid rgba(124,240,200,.22);
+      display:grid; place-items:center;
+      color: var(--brand2);
+      font-weight:800;
+      flex:0 0 auto;
+    }
+    .step b{display:block; font-size:13px; margin-top:1px}
+    .step p{margin:2px 0 0; color:var(--muted); font-size:13px}
+
+    /* Contact */
+    .contactCard{padding:18px}
+    form{display:grid; gap:10px; margin-top:10px}
+    .row{display:grid; grid-template-columns: 1fr 1fr; gap:10px}
+    label{font-size:12px; color:var(--muted)}
+    input, textarea, select{
+      width:100%;
+      padding:12px 12px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(6,10,20,.35);
+      color: var(--text);
+      outline:none;
+    }
+    textarea{min-height:110px; resize:vertical}
+    input:focus, textarea:focus, select:focus{border-color: rgba(110,168,255,.55)}
+    .fineprint{font-size:12px; color:var(--muted); margin:8px 0 0}
+    .footer{
+      padding:22px 0 38px;
+      color: var(--muted);
+      font-size:12px;
+      border-top:1px solid var(--line);
+      margin-top:18px;
+    }
+    .footGrid{
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+      align-items:center;
+    }
+    .kicker{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+      color: var(--muted);
+    }
+    .kicker a{color:var(--text); opacity:.9}
+    .kicker a:hover{opacity:1; text-decoration:underline}
+
+    /* Mobile */
+    @media (max-width: 940px){
+      .heroGrid{grid-template-columns: 1fr}
+      .hero h2{font-size:38px}
+      .grid3{grid-template-columns: 1fr}
+      .grid2{grid-template-columns: 1fr}
+      .row{grid-template-columns: 1fr}
+      .navlinks{display:none}
+      .hamburger{display:inline-flex}
+      .navlinks.mobileOpen{
+        display:flex;
+        position:absolute;
+        left:20px; right:20px; top:64px;
+        flex-direction:column;
+        background: rgba(11,18,32,.95);
+        border:1px solid var(--line);
+        border-radius: 18px;
+        padding:10px;
+      }
+      .navlinks.mobileOpen a{width:100%}
+    }
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"144 Sales",
+    "url":"https://144sales.com",
+    "email":"brandon@144sales.com",
+    "telephone":"+1-908-902-6030",
+    "description":"Excess inventory solutions provider offering brand-safe recovery options including discreet resale, export, and controlled disposition. Outright buys, brokerage, and consignment."
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="144 Sales Home">
+          <div class="logo">144</div>
+          <div>
+            <h1>144 Sales</h1>
+            <p>Deals Buyers Want. Partnerships Sellers Trust.</p>
+          </div>
+        </a>
+
+        <nav id="navlinks" class="navlinks" aria-label="Primary navigation">
+          <a href="#solutions">Solutions</a>
+          <a href="#how">How it works</a>
+          <a href="#buyers">Buyers</a>
+          <a href="#industries">Industries</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="ctaRow">
+          <a class="btn ghost" href="tel:+19089026030" aria-label="Call 144 Sales">Call</a>
+          <a class="btn primary" href="#contact">Get a quote</a>
+          <button class="btn hamburger" type="button" id="menuBtn" aria-label="Open menu">Menu</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="hero">
+    <div class="wrap">
+      <div class="heroGrid">
+        <div class="card heroCard">
+          <div class="pill"><span class="dot"></span> Brand-safe excess inventory solutions</div>
+          <h2>Turn unwanted inventory into <span>clean recovery</span>—without wrecking your relationships.</h2>
+          <p class="lede">
+            144 Sales helps manufacturers, distributors, retailers, and liquidators solve excess inventory problems using
+            discreet, channel-safe placement and creative recovery options. Outright buy, brokerage, or consignment—built for speed and trust.
+          </p>
+
+          <div class="heroActions">
+            <a class="btn primary" href="#contact">Sell excess inventory</a>
+            <a class="btn" href="#buyers">Source inventory deals</a>
+            <a class="btn ghost" href="mailto:brandon@144sales.com">Email</a>
+          </div>
+
+          <div class="miniGrid">
+            <div class="mini">
+              <b>Channel-safe</b>
+              <span>No “surprise” placement. Brand intent respected.</span>
+            </div>
+            <div class="mini">
+              <b>Fast pickup</b>
+              <span>Move product quickly, reduce storage drag.</span>
+            </div>
+            <div class="mini">
+              <b>Repeat partners</b>
+              <span>Built for long-term relationships, not one-offs.</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card sideCard">
+          <h3>What we optimize for</h3>
+          <div class="trustList">
+            <div class="trustItem">
+              <div class="icon">🧭</div>
+              <div>
+                <b>Solutions, not just sales</b>
+                <p>Discreet resale, export, controlled disposition, and logistics relief—matched to your constraints.</p>
+              </div>
+            </div>
+            <div class="trustItem">
+              <div class="icon">🛡️</div>
+              <div>
+                <b>Brand protection</b>
+                <p>We don’t place product where you don’t want it. Period.</p>
+              </div>
+            </div>
+            <div class="trustItem">
+              <div class="icon">⚡</div>
+              <div>
+                <b>Velocity</b>
+                <p>Pressure-tested on movement: slow inventory is risk.</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="fineprint">
+            Based in the U.S. • Nationwide network • Closeout / surplus / opportunity inventory
+          </p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- Solutions -->
+  <section id="solutions">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h3>Solutions</h3>
+        <p>
+          A flexible approach built around seller intent: recovery, sustainability, brand protection, or pure logistics relief.
+        </p>
+      </div>
+
+      <div class="grid3">
+        <div class="box">
+          <h4>Outright Buy</h4>
+          <p>Quick close. Clean terms. Best for time-sensitive situations, space constraints, or immediate recovery.</p>
+        </div>
+        <div class="box">
+          <h4>Brokerage</h4>
+          <p>We match your inventory with vetted buyers and handle the deal flow while protecting your channels.</p>
+        </div>
+        <div class="box">
+          <h4>Consignment</h4>
+          <p>Ideal when you want maximum recovery and controlled distribution—with aligned incentives.</p>
+        </div>
+      </div>
+
+      <div class="box" style="margin-top:12px">
+        <h4>Brand-safe recovery methods</h4>
+        <p>
+          Discreet markets • Export • No online marketing (when required) • Controlled resale • Product destruction (when needed)
+        </p>
+        <div class="tags">
+          <span class="tag">Confidentiality-first</span>
+          <span class="tag">MAP / channel aware</span>
+          <span class="tag">Case-by-case logistics</span>
+          <span class="tag">Relationship-driven placement</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h3>How it works</h3>
+        <p>A boring, repeatable process (the best kind): evaluate, protect the brand, move product fast.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <b>Send details</b>
+              <p>Photos, counts, lot sheets, expiration/dates (if applicable), location, and your channel rules.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <b>Risk & velocity check</b>
+              <p>We flag short-dated, damage, channel conflict/MAP risk, and weak movement early.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <b>Pick a structure</b>
+              <p>Outright buy, brokerage, or consignment—whatever fits your situation and timeline.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <div>
+              <b>Execute & repeat</b>
+              <p>Fast pickup, clean follow-through, and a plan for the next lot—relationships compound.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>What we will NOT do</h4>
+          <p>
+            We won’t place product where you don’t want it, and we won’t break your brand intent for a quick spread.
+          </p>
+          <div class="tags">
+            <span class="tag">No channel sabotage</span>
+            <span class="tag">No surprise placement</span>
+            <span class="tag">No reputation damage</span>
+          </div>
+
+          <hr style="border:none;border-top:1px solid var(--line); margin:14px 0" />
+
+          <h4>What you get</h4>
+          <p>
+            Clear options, fast communication, and a partner who treats your constraints like real constraints.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buyers -->
+  <section id="buyers">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h3>For buyers</h3>
+        <p>We build recurring buyer relationships focused on price + consistency, with practical deal context so you can move fast.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="box">
+          <h4>Opportunity inventory, curated</h4>
+          <p>Closeout, surplus, and excess inventory across many categories—shared with buyer-fit in mind.</p>
+        </div>
+        <div class="box">
+          <h4>Clarity that prevents stalls</h4>
+          <p>We help reduce “Will this sell?” uncertainty with straightforward movement logic and positioning.</p>
+        </div>
+        <div class="box">
+          <h4>Consistency beats randomness</h4>
+          <p>One-off deals are fine. Repeat programs are better. We like better.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section id="industries">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h3>Industries & categories</h3>
+        <p>Broad scope, disciplined execution—because inventory problems don’t stay in one aisle.</p>
+      </div>
+
+      <div class="box">
+        <div class="tags">
+          <span class="tag">CPG</span>
+          <span class="tag">Grocery</span>
+          <span class="tag">HBA</span>
+          <span class="tag">General Merchandise</span>
+          <span class="tag">Apparel</span>
+          <span class="tag">Hardlines</span>
+          <span class="tag">And more</span>
+        </div>
+        <p class="fineprint" style="margin-top:10px">
+          Whether you’re optimizing recovery, protecting brand, or clearing space fast—we tailor the solution to the situation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h3>Get a quote</h3>
+        <p>Send the basics and we’ll respond with the best path: buy, broker, or consignment—plus brand-safe options.</p>
+      </div>
+
+      <div class="card contactCard">
+        <div class="grid2">
+          <div>
+            <h4 style="margin:0 0 8px; font-size:14px">Contact</h4>
+            <p style="margin:0; color:var(--muted); font-size:13px">
+              Email is fastest. If it’s urgent, call.
+            </p>
+            <div class="tags" style="margin-top:10px">
+              <span class="tag"><a href="mailto:brandon@144sales.com">brandon@144sales.com</a></span>
+              <span class="tag"><a href="tel:+19089026030">908-902-6030</a></span>
+              <span class="tag"><a href="https://144sales.com" target="_blank" rel="noreferrer">144sales.com</a></span>
+            </div>
+
+            <hr style="border:none;border-top:1px solid var(--line); margin:14px 0" />
+
+            <div class="box">
+              <h4>What to include for a fast answer</h4>
+              <p>Category • Qty • Location • Condition • Dates (if applicable) • Your channel restrictions • Timeline</p>
+            </div>
+
+            <p class="fineprint">
+              Note: This form uses your email app by default (no backend). If you want a server-backed form, add a form endpoint.
+            </p>
+          </div>
+
+          <div>
+            <form id="leadForm">
+              <div class="row">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" placeholder="Your name" required />
+                </div>
+                <div>
+                  <label for="company">Company</label>
+                  <input id="company" name="company" placeholder="Company name" required />
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="you@company.com" required />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" placeholder="(optional)" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="role">I am a…</label>
+                  <select id="role" name="role" required>
+                    <option value="" selected disabled>Select one</option>
+                    <option>Seller (I have excess inventory)</option>
+                    <option>Buyer (I want deals)</option>
+                    <option>Both</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="timeline">Timeline</label>
+                  <select id="timeline" name="timeline" required>
+                    <option value="" selected disabled>Select one</option>
+                    <option>ASAP</option>
+                    <option>This week</option>
+                    <option>2–4 weeks</option>
+                    <option>Flexible</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="message">Details</label>
+                <textarea id="message" name="message" placeholder="What do you have / need? Include category, qty, location, condition, restrictions, and timeline." required></textarea>
+              </div>
+
+              <button class="btn primary" type="submit">Send inquiry</button>
+              <p id="formNote" class="fineprint" style="margin:0"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footGrid">
+        <div class="kicker">
+          <span>© <span id="year"></span> 144 Sales</span>
+          <span>•</span>
+          <a href="mailto:brandon@144sales.com">Email</a>
+          <span>•</span>
+          <a href="tel:+19089026030">Call</a>
+        </div>
+        <div class="kicker">
+          <span>Built for trust • velocity • long-term partnerships</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile menu
+    const menuBtn = document.getElementById("menuBtn");
+    const navlinks = document.getElementById("navlinks");
+    menuBtn?.addEventListener("click", () => {
+      navlinks.classList.toggle("mobileOpen");
+    });
+    navlinks?.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => navlinks.classList.remove("mobileOpen"));
+    });
+
+    // Form -> mailto (no backend needed)
+    const form = document.getElementById("leadForm");
+    const note = document.getElementById("formNote");
+
+    function esc(s){ return encodeURIComponent(String(s || "").trim()); }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+
+      const name = data.get("name");
+      const company = data.get("company");
+      const email = data.get("email");
+      const phone = data.get("phone");
+      const role = data.get("role");
+      const timeline = data.get("timeline");
+      const message = data.get("message");
+
+      const subject = `144 Sales Inquiry — ${company}`;
+      const body =
+`Name: ${name}
+Company: ${company}
+Email: ${email}
+Phone: ${phone || "—"}
+Role: ${role}
+Timeline: ${timeline}
+
+Details:
+${message}
+
+(Submitted from 144sales.com landing page)`;
+
+      // Basic guardrail
+      if (!name || !company || !email || !role || !timeline || !message) {
+        note.textContent = "Please fill out all required fields.";
+        note.style.color = "var(--danger)";
+        return;
+      }
+
+      const mailto = `mailto:brandon@144sales.com?subject=${esc(subject)}&body=${esc(body)}`;
+      window.location.href = mailto;
+
+      note.textContent = "Opening your email client…";
+      note.style.color = "var(--muted)";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
